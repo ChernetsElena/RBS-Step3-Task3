@@ -1,0 +1,4 @@
+https://golangs.org/openfile-mkdir
+https://golangs.org/goroutines
+https://golangbyexample.com/append-file-golang
+https://metanit.com/go/tutorial

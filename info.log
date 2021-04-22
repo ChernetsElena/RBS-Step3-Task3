@@ -1,0 +1,55 @@
+INFO	2021/04/22 15:06:29 Открытие файла: ./dir/urls.txt
+INFO	2021/04/22 15:06:29 Чтение файла: ./dir/urls.txt
+ERROR	2021/04/22 15:06:29 index.go:115: Get https:///golangs.org//openfile-mkdir: http: no Host in request URL
+INFO	2021/04/22 15:06:48 Открытие файла: ./dir/urls.txt
+INFO	2021/04/22 15:06:48 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:06:48 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/22 15:06:48 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/22 15:06:48 Создание файла: ./dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/22 15:06:48 Запись в файл: ./dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/22 15:09:38 Открытие файла: ./dir/urls.txt
+INFO	2021/04/22 15:09:38 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:10:58 Открытие файла: ./dir/urls.txt
+INFO	2021/04/22 15:10:58 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:11:32 Открытие файла: urls.txt
+INFO	2021/04/22 15:11:32 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:12:17 Открытие файла: urls.txt
+INFO	2021/04/22 15:12:17 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:13:08 Открытие файла: urls.txt
+INFO	2021/04/22 15:13:08 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:22:29 Открытие файла: urls.txt
+INFO	2021/04/22 15:22:29 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:22:29 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/22 15:22:29 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/22 15:22:29 Создание файла: ./dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/22 15:22:29 Запись в файл: ./dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/22 15:22:29 Отправка GET запроса на адрес: https://golangs.org/goroutines
+INFO	2021/04/22 15:22:29 Получение данных с адреса: https://golangs.org/goroutines
+INFO	2021/04/22 15:22:29 Создание файла: ./dir/golangs.org.goroutines.html
+INFO	2021/04/22 15:22:29 Запись в файл: ./dir/golangs.org.goroutines.html
+INFO	2021/04/22 15:22:32 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
+INFO	2021/04/22 15:22:32 Получение данных с адреса: https://golangbyexample.com/append-file-golang
+INFO	2021/04/22 15:22:32 Создание файла: ./dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/22 15:22:32 Запись в файл: ./dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/22 15:22:32 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
+INFO	2021/04/22 15:22:32 Получение данных с адреса: https://metanit.com/go/tutorial
+INFO	2021/04/22 15:22:32 Создание файла: ./dir/metanit.com.go.tutorial.html
+INFO	2021/04/22 15:22:32 Запись в файл: ./dir/metanit.com.go.tutorial.html
+INFO	2021/04/22 15:49:39 Открытие файла: urls.txt
+INFO	2021/04/22 15:49:39 Чтение файла: ./dir/urls.txt
+INFO	2021/04/22 15:49:39 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/22 15:49:39 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/22 15:49:39 Создание файла: ./dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/22 15:49:39 Запись в файл: ./dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/22 15:49:39 Отправка GET запроса на адрес: https://golangs.org/goroutines
+INFO	2021/04/22 15:49:39 Получение данных с адреса: https://golangs.org/goroutines
+INFO	2021/04/22 15:49:39 Создание файла: ./dir/golangs.org.goroutines.html
+INFO	2021/04/22 15:49:39 Запись в файл: ./dir/golangs.org.goroutines.html
+INFO	2021/04/22 15:49:42 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
+INFO	2021/04/22 15:49:42 Получение данных с адреса: https://golangbyexample.com/append-file-golang
+INFO	2021/04/22 15:49:42 Создание файла: ./dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/22 15:49:42 Запись в файл: ./dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/22 15:49:42 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
+INFO	2021/04/22 15:49:42 Получение данных с адреса: https://metanit.com/go/tutorial
+INFO	2021/04/22 15:49:42 Создание файла: ./dir/metanit.com.go.tutorial.html
+INFO	2021/04/22 15:49:42 Запись в файл: ./dir/metanit.com.go.tutorial.html
