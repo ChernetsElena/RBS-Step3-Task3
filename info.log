@@ -1,55 +1,168 @@
-INFO	2021/04/22 15:06:29 Открытие файла: ./dir/urls.txt
-INFO	2021/04/22 15:06:29 Чтение файла: ./dir/urls.txt
-ERROR	2021/04/22 15:06:29 index.go:115: Get https:///golangs.org//openfile-mkdir: http: no Host in request URL
-INFO	2021/04/22 15:06:48 Открытие файла: ./dir/urls.txt
-INFO	2021/04/22 15:06:48 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:06:48 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
-INFO	2021/04/22 15:06:48 Получение данных с адреса: https://golangs.org/openfile-mkdir
-INFO	2021/04/22 15:06:48 Создание файла: ./dir/golangs.org.openfile-mkdir.html
-INFO	2021/04/22 15:06:48 Запись в файл: ./dir/golangs.org.openfile-mkdir.html
-INFO	2021/04/22 15:09:38 Открытие файла: ./dir/urls.txt
-INFO	2021/04/22 15:09:38 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:10:58 Открытие файла: ./dir/urls.txt
-INFO	2021/04/22 15:10:58 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:11:32 Открытие файла: urls.txt
-INFO	2021/04/22 15:11:32 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:12:17 Открытие файла: urls.txt
-INFO	2021/04/22 15:12:17 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:13:08 Открытие файла: urls.txt
-INFO	2021/04/22 15:13:08 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:22:29 Открытие файла: urls.txt
-INFO	2021/04/22 15:22:29 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:22:29 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
-INFO	2021/04/22 15:22:29 Получение данных с адреса: https://golangs.org/openfile-mkdir
-INFO	2021/04/22 15:22:29 Создание файла: ./dir/golangs.org.openfile-mkdir.html
-INFO	2021/04/22 15:22:29 Запись в файл: ./dir/golangs.org.openfile-mkdir.html
-INFO	2021/04/22 15:22:29 Отправка GET запроса на адрес: https://golangs.org/goroutines
-INFO	2021/04/22 15:22:29 Получение данных с адреса: https://golangs.org/goroutines
-INFO	2021/04/22 15:22:29 Создание файла: ./dir/golangs.org.goroutines.html
-INFO	2021/04/22 15:22:29 Запись в файл: ./dir/golangs.org.goroutines.html
-INFO	2021/04/22 15:22:32 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
-INFO	2021/04/22 15:22:32 Получение данных с адреса: https://golangbyexample.com/append-file-golang
-INFO	2021/04/22 15:22:32 Создание файла: ./dir/golangbyexample.com.append-file-golang.html
-INFO	2021/04/22 15:22:32 Запись в файл: ./dir/golangbyexample.com.append-file-golang.html
-INFO	2021/04/22 15:22:32 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
-INFO	2021/04/22 15:22:32 Получение данных с адреса: https://metanit.com/go/tutorial
-INFO	2021/04/22 15:22:32 Создание файла: ./dir/metanit.com.go.tutorial.html
-INFO	2021/04/22 15:22:32 Запись в файл: ./dir/metanit.com.go.tutorial.html
-INFO	2021/04/22 15:49:39 Открытие файла: urls.txt
-INFO	2021/04/22 15:49:39 Чтение файла: ./dir/urls.txt
-INFO	2021/04/22 15:49:39 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
-INFO	2021/04/22 15:49:39 Получение данных с адреса: https://golangs.org/openfile-mkdir
-INFO	2021/04/22 15:49:39 Создание файла: ./dir/golangs.org.openfile-mkdir.html
-INFO	2021/04/22 15:49:39 Запись в файл: ./dir/golangs.org.openfile-mkdir.html
-INFO	2021/04/22 15:49:39 Отправка GET запроса на адрес: https://golangs.org/goroutines
-INFO	2021/04/22 15:49:39 Получение данных с адреса: https://golangs.org/goroutines
-INFO	2021/04/22 15:49:39 Создание файла: ./dir/golangs.org.goroutines.html
-INFO	2021/04/22 15:49:39 Запись в файл: ./dir/golangs.org.goroutines.html
-INFO	2021/04/22 15:49:42 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
-INFO	2021/04/22 15:49:42 Получение данных с адреса: https://golangbyexample.com/append-file-golang
-INFO	2021/04/22 15:49:42 Создание файла: ./dir/golangbyexample.com.append-file-golang.html
-INFO	2021/04/22 15:49:42 Запись в файл: ./dir/golangbyexample.com.append-file-golang.html
-INFO	2021/04/22 15:49:42 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
-INFO	2021/04/22 15:49:42 Получение данных с адреса: https://metanit.com/go/tutorial
-INFO	2021/04/22 15:49:42 Создание файла: ./dir/metanit.com.go.tutorial.html
-INFO	2021/04/22 15:49:42 Запись в файл: ./dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:16 Открытие файла: urls.txt
+INFO	2021/04/26 15:06:16 Чтение файла: urls.txt
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://golangs.org/goroutines
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://golangs.org/goroutines
+INFO	2021/04/26 15:06:17 Создание файла: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:06:17 Создание файла: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://wiki.dieg.info
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://www.postgresql.org
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://www.postgresql.org
+INFO	2021/04/26 15:06:17 Создание файла: dir/www.postgresql.org.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/www.postgresql.org.html
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://habr.com
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://habr.com
+INFO	2021/04/26 15:06:17 Создание файла: dir/habr.com.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/habr.com.html
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://golangforall.com
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://wiki.dieg.info
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://golangforall.com
+INFO	2021/04/26 15:06:17 Создание файла: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:06:17 Создание файла: dir/golangforall.com.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/golangforall.com.html
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:06:17 Создание файла: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://medium.com
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://medium.com
+INFO	2021/04/26 15:06:17 Создание файла: dir/medium.com.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/medium.com.html
+INFO	2021/04/26 15:06:17 Отправка GET запроса на адрес: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:06:17 Получение данных с адреса: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:06:17 Создание файла: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:06:17 Запись в файл: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:06:18 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:06:18 Получение данных с адреса: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:06:18 Создание файла: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:06:18 Запись в файл: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:06:51 Открытие файла: urls.txt
+INFO	2021/04/26 15:06:51 Чтение файла: urls.txt
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://golangs.org/goroutines
+INFO	2021/04/26 15:06:51 Создание файла: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://golangs.org/goroutines
+INFO	2021/04/26 15:06:51 Создание файла: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://www.postgresql.org
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://www.postgresql.org
+INFO	2021/04/26 15:06:51 Создание файла: dir/www.postgresql.org.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/www.postgresql.org.html
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://wiki.dieg.info
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://golangforall.com
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://golangforall.com
+INFO	2021/04/26 15:06:51 Создание файла: dir/golangforall.com.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/golangforall.com.html
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:06:51 Создание файла: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://wiki.dieg.info
+INFO	2021/04/26 15:06:51 Создание файла: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://medium.com
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://medium.com
+INFO	2021/04/26 15:06:51 Создание файла: dir/medium.com.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/medium.com.html
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://habr.com
+INFO	2021/04/26 15:06:51 Получение данных с адреса: https://habr.com
+INFO	2021/04/26 15:06:51 Создание файла: dir/habr.com.html
+INFO	2021/04/26 15:06:51 Запись в файл: dir/habr.com.html
+INFO	2021/04/26 15:06:51 Отправка GET запроса на адрес: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:06:52 Получение данных с адреса: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:06:52 Создание файла: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:06:52 Запись в файл: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:06:53 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:06:53 Получение данных с адреса: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:06:53 Создание файла: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:06:53 Запись в файл: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:06:59 Открытие файла: urls.txt
+INFO	2021/04/26 15:06:59 Чтение файла: urls.txt
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://golangs.org/goroutines
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://wiki.dieg.info
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://golangs.org/goroutines
+INFO	2021/04/26 15:06:59 Создание файла: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:06:59 Создание файла: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://habr.com
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://www.postgresql.org
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://www.postgresql.org
+INFO	2021/04/26 15:06:59 Создание файла: dir/www.postgresql.org.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/www.postgresql.org.html
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:06:59 Создание файла: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://wiki.dieg.info
+INFO	2021/04/26 15:06:59 Создание файла: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://habr.com
+INFO	2021/04/26 15:06:59 Создание файла: dir/habr.com.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/habr.com.html
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://golangforall.com
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://golangforall.com
+INFO	2021/04/26 15:06:59 Создание файла: dir/golangforall.com.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/golangforall.com.html
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:06:59 Создание файла: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:06:59 Отправка GET запроса на адрес: https://medium.com
+INFO	2021/04/26 15:06:59 Получение данных с адреса: https://medium.com
+INFO	2021/04/26 15:06:59 Создание файла: dir/medium.com.html
+INFO	2021/04/26 15:06:59 Запись в файл: dir/medium.com.html
+INFO	2021/04/26 15:07:01 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:07:01 Получение данных с адреса: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:07:01 Создание файла: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:07:01 Запись в файл: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:07:15 Открытие файла: urls.txt
+INFO	2021/04/26 15:07:15 Чтение файла: urls.txt
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://golangs.org/goroutines
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://wiki.dieg.info
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://golangs.org/goroutines
+INFO	2021/04/26 15:07:15 Создание файла: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/golangs.org.goroutines.html
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://golangs.org/openfile-mkdir
+INFO	2021/04/26 15:07:15 Создание файла: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/golangs.org.openfile-mkdir.html
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://habr.com
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://habr.com
+INFO	2021/04/26 15:07:15 Создание файла: dir/habr.com.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/habr.com.html
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://www.postgresql.org
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://www.postgresql.org
+INFO	2021/04/26 15:07:15 Создание файла: dir/www.postgresql.org.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/www.postgresql.org.html
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://wiki.dieg.info
+INFO	2021/04/26 15:07:15 Создание файла: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/wiki.dieg.info.html
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://habr.com/ru/post/195574
+INFO	2021/04/26 15:07:15 Создание файла: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/habr.com.ru.post.195574.html
+INFO	2021/04/26 15:07:15 Отправка GET запроса на адрес: https://golangforall.com
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://golangforall.com
+INFO	2021/04/26 15:07:15 Создание файла: dir/golangforall.com.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/golangforall.com.html
+INFO	2021/04/26 15:07:15 Получение данных с адреса: https://metanit.com/go/tutorial
+INFO	2021/04/26 15:07:15 Создание файла: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:07:15 Запись в файл: dir/metanit.com.go.tutorial.html
+INFO	2021/04/26 15:07:16 Отправка GET запроса на адрес: https://medium.com
+INFO	2021/04/26 15:07:16 Получение данных с адреса: https://medium.com
+INFO	2021/04/26 15:07:16 Создание файла: dir/medium.com.html
+INFO	2021/04/26 15:07:16 Запись в файл: dir/medium.com.html
+INFO	2021/04/26 15:07:17 Отправка GET запроса на адрес: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:07:17 Получение данных с адреса: https://golangbyexample.com/append-file-golang
+INFO	2021/04/26 15:07:17 Создание файла: dir/golangbyexample.com.append-file-golang.html
+INFO	2021/04/26 15:07:17 Запись в файл: dir/golangbyexample.com.append-file-golang.html

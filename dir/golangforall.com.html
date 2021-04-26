@@ -1,0 +1,767 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Articles - Golang for all">
+    <meta name="keywords" content="GO,Golang,development,blog">
+    
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Golang for all" />
+  <meta property="og:title" content="Articles - Golang for all" />
+  <meta property="og:description" content="Articles - Golang for all" />
+  <link rel="canonical" href="https://golangforall.com/en/"/>
+  <meta property="og:locale" content="en_US" />
+
+
+    <meta name="yandex-verification" content="10233a4b32f4dc29" />
+    <meta name="yandex-verification" content="cfa4be404c1af368" />
+    
+    <title>Articles - Golang for all</title>
+    <link rel="icon" type="image/png" sizes="93x93" href="/assets/gophereye.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/gophereye32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/gophereye16x16.png">
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" integrity="sha256-YjcCvXkdRVOucibC9I4mBS41lXPrWfqY2BnpskhZPnw=" crossorigin="anonymous" />
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/assets/highlight.css">
+    
+</head>
+<body>
+
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding-bottom: 0;">
+        <div class="container">
+            <a class="navbar-brand" href="/en/" style="padding-bottom: 0">
+                <img src="/assets/verh.svg" alt="gopher eyes" style="height: 50px;"/>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a href="/en/" style="color:#000;"><span class="gopherchat">Golang for all</span></a>
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" target="_blank" href="https://t.me/thewonderfulgo">Telegram</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" target="_blank" href="/en/gopher-drawings.html">
+                            Gopher drawings
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/en/about.html">About</a>
+                    </li>
+ 
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="bg-light">&nbsp;</div>
+
+
+<div class="container">
+    
+<div class="col-md-12 mt-4">
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">07/10/2020</span>
+        <h2 class="card-title">Remote debugging with Delve</h2>
+
+        
+            <p class="card-text">
+                Previously we discussed <a href="/en/post/goland-debugger.html">local debugging with Goland IDE</a>.
+Currently we'll discuss how to remotely debug the program, which is working inside Docker container, 
+with Visual Studio Code and Goland IDE.
+            </p>
+        
+
+        <a href="/en/post/go-docker-delve-remote-debug.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/docker.html" class="badge">docker</a>
+        
+        <a href="/en/tag/debugger.html" class="badge">debugger</a>
+        
+        <a href="/en/tag/delve.html" class="badge">delve</a>
+        
+        <a href="/en/tag/vscode.html" class="badge">vscode</a>
+        
+        <a href="/en/tag/goland.html" class="badge">goland</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">07/01/2020</span>
+        <h2 class="card-title">Deploy docker swarm from Gitlab CI</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Docker container deployment has many advantages over binary deployment.
+Let's dive into advantages and see how we can implement docker container deployment from Gitlab CI.
+<br/>
+Let's talk standard <code>docker</code> can help us. 
+Any docker orchestration tools (Kubernetes, for example) will be observed in future articles.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/go-deploy-docker-swarm-gitlab.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/docker.svg"
+                                 style="max-height: 300px;" alt="Deploy docker swarm from Gitlab CI"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/go-deploy-docker-swarm-gitlab.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/docker.html" class="badge">docker</a>
+        
+        <a href="/en/tag/deploy.html" class="badge">deploy</a>
+        
+        <a href="/en/tag/gitlab.html" class="badge">gitlab</a>
+        
+        <a href="/en/tag/ci-cd.html" class="badge">ci-cd</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">06/30/2020</span>
+        <h2 class="card-title">net-wait-go utility / library</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Both utility and GO package to wait for port to open (TCP, UDP).
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/net-wait-go.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/tube2.svg"
+                                 style="max-height: 300px;" alt="net-wait-go utility / library"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/net-wait-go.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/tcp.html" class="badge">tcp</a>
+        
+        <a href="/en/tag/udp.html" class="badge">udp</a>
+        
+        <a href="/en/tag/docker.html" class="badge">docker</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">06/29/2020</span>
+        <h2 class="card-title">Minimal Docker image with GO</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Let's discuss how the minimal docker image with GO program can be built.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/go-minimum-docker-image.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/docker.svg"
+                                 style="max-height: 300px;" alt="Minimal Docker image with GO"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/go-minimum-docker-image.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/docker.html" class="badge">docker</a>
+        
+        <a href="/en/tag/compilation.html" class="badge">compilation</a>
+        
+        <a href="/en/tag/upx.html" class="badge">upx</a>
+        
+        <a href="/en/tag/ldflags.html" class="badge">ldflags</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">05/08/2020</span>
+        <h2 class="card-title">Compilation and deploy via SSH in Gitlab CI</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Let's take a look to how GO compilation works and use Gitlab CI for that.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/go-build-and-deploy-ssh-gitlab.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/gitlab_logo.svg"
+                                 style="max-height: 300px;" alt="Compilation and deploy via SSH in Gitlab CI"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/go-build-and-deploy-ssh-gitlab.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/gitlab.html" class="badge">gitlab</a>
+        
+        <a href="/en/tag/compilation.html" class="badge">compilation</a>
+        
+        <a href="/en/tag/deploy.html" class="badge">deploy</a>
+        
+        <a href="/en/tag/ssh.html" class="badge">ssh</a>
+        
+        <a href="/en/tag/modules.html" class="badge">modules</a>
+        
+        <a href="/en/tag/vendor.html" class="badge">vendor</a>
+        
+        <a href="/en/tag/ci-cd.html" class="badge">ci-cd</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">05/02/2020</span>
+        <h2 class="card-title">sync.Map</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Let's take a look to <code>sync.Map</code> usage and it's sources.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/sync-map.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/dvoe.svg"
+                                 style="max-height: 300px;" alt="sync.Map"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/sync-map.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/sync.map.html" class="badge">sync.map</a>
+        
+        <a href="/en/tag/map.html" class="badge">map</a>
+        
+        <a href="/en/tag/concurrency.html" class="badge">concurrency</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">05/02/2020</span>
+        <h2 class="card-title">HTTP</h2>
+
+        
+            <p class="card-text">
+                Let's take a look to HTTP tools in GO.
+            </p>
+        
+
+        <a href="/en/post/http.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/http.html" class="badge">http</a>
+        
+        <a href="/en/tag/client.html" class="badge">client</a>
+        
+        <a href="/en/tag/server.html" class="badge">server</a>
+        
+        <a href="/en/tag/middleware.html" class="badge">middleware</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/21/2020</span>
+        <h2 class="card-title">Dependency injection in GO</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Let's talk about <i>dependency injection</i> pattern and about dependency management in
+large programs.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/dependency-injection.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/vlog.svg"
+                                 style="max-height: 300px;" alt="Dependency injection in GO"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/dependency-injection.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/dependency.html" class="badge">dependency</a>
+        
+        <a href="/en/tag/injection.html" class="badge">injection</a>
+        
+        <a href="/en/tag/container.html" class="badge">container</a>
+        
+        <a href="/en/tag/singleton.html" class="badge">singleton</a>
+        
+        <a href="/en/tag/multiton.html" class="badge">multiton</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/23/2020</span>
+        <h2 class="card-title">Profiling</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        GO has rich profiling tools from the very beginning — <code>pprof</code> package
+and <code>go tool pprof</code>.
+Let's discuss why profiling is good, how to work with it and what is new here.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/profiling.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/goph.svg"
+                                 style="max-height: 300px;" alt="Profiling"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/profiling.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/profiling.html" class="badge">profiling</a>
+        
+        <a href="/en/tag/pprof.html" class="badge">pprof</a>
+        
+        <a href="/en/tag/benchmark.html" class="badge">benchmark</a>
+        
+        <a href="/en/tag/ab.html" class="badge">ab</a>
+        
+        <a href="/en/tag/cpu.html" class="badge">cpu</a>
+        
+        <a href="/en/tag/allocation.html" class="badge">allocation</a>
+        
+        <a href="/en/tag/remote.html" class="badge">remote</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/09/2020</span>
+        <h2 class="card-title">GO templates</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Packages <code>text/template</code>, <code>html/template</code> are part of GO standard library.
+GO templates are used in many GO-programmed software — <code>docker</code>, <code>kubernetes</code>, 
+<code>helm</code>. Many 3rd party libraries are integrated with GO templates, for example <a href="https://echo.labstack.com/guide/templates"
+ rel="nofollow">echo</a>. Knowing GO templates syntax is pretty useful.
+This article consists of <a href="https://golang.org/pkg/text/template/"
+ rel="nofollow"><code>text/template</code> package documentation</a> and couple
+of author's solutions. After describing GO templates syntax
+we'll dive into <code>text/template</code> и <code>html/template</code> sources.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/templates.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/lis.svg"
+                                 style="max-height: 300px;" alt="GO templates"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/templates.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/templates.html" class="badge">templates</a>
+        
+        <a href="/en/tag/html.html" class="badge">html</a>
+        
+        <a href="/en/tag/text.html" class="badge">text</a>
+        
+        <a href="/en/tag/sources.html" class="badge">sources</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/07/2020</span>
+        <h2 class="card-title">Filtering by a list of values with GORM</h2>
+
+        
+            <p class="card-text">
+                If one has a list of values, for example 1,2,3, to filter data by this this one should use <code>ANY</code> 
+and <code>pq.Array</code> constructions:
+            </p>
+        
+
+        <a href="/en/post/gorm-filter-by-list-of-values.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/gorm.html" class="badge">gorm</a>
+        
+        <a href="/en/tag/sql.html" class="badge">sql</a>
+        
+        <a href="/en/tag/postgresql.html" class="badge">postgresql</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/04/2020</span>
+        <h2 class="card-title">Principles of slice type in GO</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        How to use slices is described <a href="https://blog.golang.org/slices-intro"
+ rel="nofollow">in GO blog</a>. Let's take a look to a slice internals.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/golang-slice.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/gophslice.svg"
+                                 style="max-height: 300px;" alt="Principles of slice type in GO"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/golang-slice.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/slice.html" class="badge">slice</a>
+        
+        <a href="/en/tag/sources.html" class="badge">sources</a>
+        
+        <a href="/en/tag/allocation.html" class="badge">allocation</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/02/2020</span>
+        <h2 class="card-title">Data handling in concurrent programs</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        In GO we have goroutines functionality out of the box.
+We can run code in parallel.
+But in our parallel running code we can work with shared variables.
+And it is not clear how exactly GO handles such situations
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/golang-data-handling-concurrent-programs.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/kanat.svg"
+                                 style="max-height: 300px;" alt="Data handling in concurrent programs"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/golang-data-handling-concurrent-programs.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/slice.html" class="badge">slice</a>
+        
+        <a href="/en/tag/map.html" class="badge">map</a>
+        
+        <a href="/en/tag/counter.html" class="badge">counter</a>
+        
+        <a href="/en/tag/sync.html" class="badge">sync</a>
+        
+        <a href="/en/tag/atomic.html" class="badge">atomic</a>
+        
+        <a href="/en/tag/channels.html" class="badge">channels</a>
+        
+        <a href="/en/tag/mutex.html" class="badge">mutex</a>
+        
+        <a href="/en/tag/lock.html" class="badge">lock</a>
+        
+        <a href="/en/tag/concurrency.html" class="badge">concurrency</a>
+        
+        <a href="/en/tag/race.html" class="badge">race</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/02/2020</span>
+        <h2 class="card-title">Principles of map type in GO</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        The <code>map</code> programming interface in GO described <a href="https://blog.golang.org/maps"
+ rel="nofollow">in GO blog</a>.
+We just need to recall, that map is key-value storage and
+it should retrieve values by key <i>as fast as possible</i>.
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/map-principles-golang.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/map.svg"
+                                 style="max-height: 300px;" alt="Principles of map type in GO"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/map-principles-golang.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/map.html" class="badge">map</a>
+        
+        <a href="/en/tag/sources.html" class="badge">sources</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">04/01/2020</span>
+        <h2 class="card-title">Coding simple tcp chat on GO</h2>
+
+        
+            <p class="card-text">
+                An example on simple tcp chat on GO with logic explanation
+            </p>
+        
+
+        <a href="/en/post/golang-tcp-server-chat.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/tcp.html" class="badge">tcp</a>
+        
+        <a href="/en/tag/server.html" class="badge">server</a>
+        
+        <a href="/en/tag/chat.html" class="badge">chat</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">03/31/2020</span>
+        <h2 class="card-title">Golang regexp: matching newline</h2>
+
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Why PHP- and JavaScript-like regular expressions work with dot (".") work differently in GO
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/en/post/golang-regexp-matching-newline.html">
+                            <img class="card-img-top mb-4"
+                                 src="/assets/regular.svg"
+                                 style="max-height: 300px;" alt="Golang regexp: matching newline"/></a>
+                    </div>
+                </div>
+            </div>
+        
+
+        <a href="/en/post/golang-regexp-matching-newline.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/regular%20expressions.html" class="badge">regular expressions</a>
+        
+        <a href="/en/tag/sources.html" class="badge">sources</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">03/30/2020</span>
+        <h2 class="card-title">GORM: filter entity by linked entity</h2>
+
+        
+            <p class="card-text">
+                Task is not that simple, especially with GORM
+            </p>
+        
+
+        <a href="/en/post/gorm-filter-entity-by-linked-entity.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/gorm.html" class="badge">gorm</a>
+        
+        <a href="/en/tag/sql.html" class="badge">sql</a>
+        
+        <a href="/en/tag/postgresql.html" class="badge">postgresql</a>
+        
+
+    </div>
+</div>
+
+    
+        
+<div class="card mb-4 bg-light rounded container" style="border: none;">
+    <div class="card-body">
+        <span style="color: #aaa; float:right;">03/24/2020</span>
+        <h2 class="card-title">Why and how to use debugger with GO</h2>
+
+        
+            <p class="card-text">
+                Debugger is a very helpful and powerful tool.
+It can help you to understand what exactly is happening in the code,
+explore new project, avoid needless debug code changes
+            </p>
+        
+
+        <a href="/en/post/goland-debugger.html" class="btn btn-primary">Read More →</a>
+        
+        
+        <a href="/en/tag/debugger.html" class="badge">debugger</a>
+        
+        <a href="/en/tag/goland.html" class="badge">goland</a>
+        
+
+    </div>
+</div>
+
+    
+
+
+</div>
+
+</div>
+
+<div class="bg-light">&nbsp;</div>
+
+<footer>
+    <div class="container " style="padding-top: 0; padding-bottom: 10px;">
+        <div class="container">
+            <img src="/assets/niz.svg" alt="gopher legs" style="height: 50px; vertical-align: top;"/>
+            <div style="text-align: right; vertical-align: top; display: inline-block;">
+                
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <a href="/ru/">
+                        <span class="flag-icon flag-icon-ru"></span>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-161879881-1"></script>
+<script defer src="https://mc.yandex.ru/metrika/tag.js"></script>
+<script defer src="/assets/counters.js"></script>
+
+</body>
+</html>
+ 

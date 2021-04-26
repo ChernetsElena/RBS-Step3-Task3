@@ -2,50 +2,44 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"flag"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
+	"path"
 	"strings"
+	"sync"
+	"time"
 )
 
-func main() {
+//var c = make(chan string, 15)
+var logFlag *bool
+var wg sync.WaitGroup
 
+func main() {
 	var (
 		datafile *string
 		dir      *string
 	)
 
-	// создание файла для логов
-	logFile, err := os.OpenFile("info.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer logFile.Close()
-
-	// создание логов
-	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
-	infoLogFile := log.New(logFile, "INFO\t", log.Ldate|log.Ltime)
-	errorLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
-	errorLogFile := log.New(logFile, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
-
 	// чтение аргументов
-	datafile = flag.String("datafile", "urls.txt", `Path to datafile. Default: "urls.txt"`)
-	dir = flag.String("dir", "./dir/", `Path to dir. Default: "./dir/"`)
+	datafile = flag.String("datafile", "urls.txt", `Path to datafile."`)
+	dir = flag.String("dir", "dir", `Path to dir."`)
+	logFlag = flag.Bool("log", false, `Write logs to file."`)
+
 	flag.Parse()
 
 	// открытие файла
 	urlFile, err := os.Open(*datafile)
 	if err != nil {
-		errorLog.Println(err)
-		errorLogFile.Println(err)
+		writeError(err)
 		os.Exit(1)
-		return
 	}
 	defer urlFile.Close()
-	infoLog.Printf("Открытие файла: %s\n", *datafile)
-	infoLogFile.Printf("Открытие файла: %s\n", *datafile)
+	writeInfo("Открытие файла: " + *datafile)
 
 	// создание директории
 	if _, err := os.Stat(*dir); os.IsNotExist(err) {
@@ -53,85 +47,112 @@ func main() {
 	}
 
 	// чтение файла
-	infoLog.Printf("Чтение файла: %s\n", *dir+*datafile)
-	infoLogFile.Printf("Чтение файла: %s\n", *dir+*datafile)
+	writeInfo("Чтение файла: " + *datafile)
 	scanner := bufio.NewScanner(urlFile)
 
+	// узнаем кол-во строк файла, указываем сколько горутин в группе надо ждать (кол-во строк)
 	for scanner.Scan() {
-		address := string(scanner.Text())
-		writeBodyToFile(address, dir, errorLog, infoLog, errorLogFile, infoLogFile)
+		wg.Add(1)
 	}
+
+	// перемещаем курсор в начало файла
+	urlFile.Seek(0, 0)
+
+	scanner = bufio.NewScanner(urlFile)
+
+	start := time.Now()
+	for scanner.Scan() {
+		go writeToFileResponce(scanner.Text(), *dir)
+	}
+	elapsedTime := time.Since(start)
+
+	// for j := 0; j < i; j++ {
+	// 	_ = <-c
+	// }
 
 	if err := scanner.Err(); err != nil {
-		errorLog.Println(err)
-		errorLogFile.Println(err)
-		os.Exit(1)
+		writeError(err)
 	}
+
+	wg.Wait()
+
+	fmt.Println("Total Time: " + elapsedTime.String())
 }
 
-// функция записывает в файл данные ответа
-func writeBodyToFile(
-	address string,
-	dir *string,
-	errorLog *log.Logger,
-	infoLog *log.Logger,
-	errorLogFile *log.Logger,
-	infoLogFile *log.Logger) {
-
-	body := MakeRequest(address, errorLog, infoLog, errorLogFile, infoLogFile)
-
-	log.Println("body")
+func writeToFileResponce(address string, dir string) {
+	defer wg.Done()
+	body := MakeRequest(address)
 
 	fileName := strings.Replace(address, "https://", "", -1)
 	fileName = strings.Replace(fileName, "http://", "", -1)
 	fileName = strings.Replace(fileName, "/", ".", -1)
 
 	// создание файла
-	file := MakeFile(dir, fileName, errorLog, infoLog, errorLogFile, infoLogFile)
-	log.Println("file")
+	filePath := path.Join(dir, fileName+".html")
+	file, err := os.Create(filePath)
+	if err != nil {
+		writeError(err)
+	}
+	defer file.Close()
+	writeInfo("Создание файла: " + filePath)
 
 	// запись в файл
 	file.Write(body)
-	infoLog.Printf("Запись в файл: %s\n", *dir+fileName+".html")
-	infoLogFile.Printf("Запись в файл: %s\n", *dir+fileName+".html")
+	writeInfo("Запись в файл: " + filePath)
+	//c <- fileName
 
-	return
-}
-
-// функция создает файл
-func MakeFile(dir *string, fileName string, errorLog *log.Logger, infoLog *log.Logger, errorLogFile *log.Logger, infoLogFile *log.Logger) (file *os.File) {
-	file, err := os.Create(*dir + fileName + ".html")
-	if err != nil {
-		errorLog.Println("Unable to create file:", err)
-		errorLogFile.Println("Unable to create file:", err)
-		os.Exit(1)
-	}
-	defer file.Close()
-	infoLog.Printf("Создание файла: %s\n", *dir+fileName+".html")
-	infoLogFile.Printf("Создание файла: %s\n", *dir+fileName+".html")
-
-	return
 }
 
 // функция отправляет запрос и получает данные
-func MakeRequest(address string, errorLog *log.Logger, infoLog *log.Logger, errorLogFile *log.Logger, infoLogFile *log.Logger) (body []byte) {
+func MakeRequest(
+	address string) (body []byte) {
+
 	resp, err := http.Get(address)
-	if err != nil {
-		errorLog.Println(err)
-		errorLogFile.Println(err)
-		os.Exit(1)
+	if r := recover(); r != nil {
+		writeError(err)
 	}
-	infoLog.Printf("Отправка GET запроса на адрес: %s\n", address)
-	infoLogFile.Printf("Отправка GET запроса на адрес: %s\n", address)
+
+	writeInfo("Отправка GET запроса на адрес: " + address)
+
+	if resp == nil {
+		writeError(errors.New("Resp is nil"))
+		return
+	}
 
 	body, err = ioutil.ReadAll(resp.Body)
-	if err != nil {
-		errorLog.Println(err)
-		errorLogFile.Println(err)
-		os.Exit(1)
+	if r := recover(); r != nil {
+		writeError(err)
 	}
-	infoLog.Printf("Получение данных с адреса: %s\n", address)
-	infoLogFile.Printf("Получение данных с адреса: %s\n", address)
+	defer resp.Body.Close()
+
+	writeInfo("Получение данных с адреса: " + address)
 
 	return
+}
+
+func writeInfo(infoMessage string) {
+	if *logFlag {
+		// создание файла для логов
+		logFile, err := os.OpenFile("info.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer logFile.Close()
+		infoLogFile := log.New(logFile, "INFO\t", log.Ldate|log.Ltime)
+		infoLogFile.Printf(infoMessage)
+	}
+	log.Println("INFO\t" + infoMessage)
+}
+
+func writeError(errorMessage error) {
+	if *logFlag {
+		logFile, err := os.OpenFile("info.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer logFile.Close()
+		errorLogFile := log.New(logFile, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
+		errorLogFile.Println(errorMessage)
+	}
+	log.Println(errors.New("ERROR\t"), errorMessage)
 }
